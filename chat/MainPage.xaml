@@ -13,13 +13,25 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Entry x:Name="UsernameEntry" 
-               Placeholder="" 
+               Placeholder="Podaj nazwę użytkownika" 
                Grid.Row="0" 
                Grid.Column="0"
                Margin="20"
                HorizontalOptions="Fill"/>
         <ScrollView Grid.Row="1" Grid.Column="0">
-            <VerticalStackLayout>
+            <VerticalStackLayout x:Name="ChatHistory">
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
+                <Label Text="Test chat entry" />
                 <Label Text="Test chat entry" />
                 <Label Text="Test chat entry" />
                 <Label Text="Test chat entry" />
@@ -34,7 +46,7 @@
             </Grid.ColumnDefinitions>
             <Entry Grid.Column="0" Grid.Row="0" x:Name="ChatEntry" 
                    Placeholder="Tu wpisz wiadomość"/>
-            <Button Grid.Column="1" Text="Wyślij"/>
+            <Button Grid.Column="1" Text="Wyślij" Clicked="Send"/>
         </Grid>
     </Grid>
 
